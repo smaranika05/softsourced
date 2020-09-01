@@ -1,0 +1,267 @@
+@import '../../../assets/scss/colors';
+@import '../../../assets/scss/flexbox';
+@import '../../../assets/scss/divider';
+
+
+.pricing_s
+{
+    overflow-x: hidden;
+    .main_slider
+    {
+        @include flexi(column, center, space-around);
+        flex-wrap: wrap;
+        .custom_btn
+        {
+            width: 170px;
+        }
+    }
+    .sync_slider
+    {
+        @include flexi(column, center, space-evenly);
+        .slide_wrapper:last-child{
+            .pricing_slide
+            {
+                border-bottom-width: 6px;
+            }
+        }
+        
+    }
+    .desc
+    {
+        max-width: 100%;
+        color: black;
+        font-size: 14px;
+    }
+    
+}
+
+
+.pricing_slide
+{
+    border: 6px solid $primary_color;
+    
+    border-bottom-width: 0px;
+    position: relative;
+    
+    @include flexi(column, center, space-evenly);
+    padding: 8px;
+    padding-bottom: 2px;
+  
+    height: 120px;    
+
+    margin: auto;
+  
+    width: 230px;
+    overflow: hidden;
+    
+   
+    mix-blend-mode: darken;
+    transition: all .3s ease-in-out;
+    //box-shadow: 0px 4px 80px rgba(55, 174, 134, 0.5);
+
+  
+ 
+ 
+       
+    
+
+}
+
+
+  .ellipse2
+  {
+    display: none;
+    position: absolute;
+    right: -20px;
+    bottom: -45px;
+    width: 310px;
+    height: 310px;
+    transform: rotate(1.37deg);
+    mix-blend-mode: screen;
+    pointer-events: none;
+  }
+  .ellipse3
+  {
+      display: none;
+    position: absolute;
+    left: -1px;
+    pointer-events: none;
+    bottom: -44px;
+    width: 282px;
+    mix-blend-mode: screen;
+    height: 280px;
+    transform: rotate(0.52deg);
+  }
+
+ 
+  @media screen and (min-width: 1024px)
+  {
+      .pricing_slide
+      {
+
+      
+    &:hover
+    {
+        box-shadow: 1px 3px 20px rgba(0,0,0,.6);
+        transition: all .3s ease-in-out;
+        transform: scale(1.05);
+    }
+}
+  }
+
+  @media screen and (min-width: 768px)
+  {
+      
+      .main_slider
+      {
+          flex-direction: row !important;
+         
+      }
+      .sync_slider
+      {
+        .slide_wrapper
+        {
+            margin: 30px auto;
+        }
+        flex-direction: row !important;
+        flex-wrap: wrap;
+      }
+      .pricing_slide
+      {
+          border: none;
+        height: 345px;
+        padding: 30px 18px 10px;
+        padding-top: 45px;
+        justify-content: space-evenly;
+        color: white;
+        background: #37AE86;
+        .custom_btn
+        {
+            display: block;
+        }
+        
+    
+        .desc
+    {
+        margin: 12px auto;
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .title
+    {
+        margin-top: -23px;
+    z-index: 100;
+    color: black;
+    }
+}
+    
+      @supports (mix-blend-mode: overlay) {
+
+        .ellipse2, .ellipse3 {
+            display: block;
+        }
+        
+    .pricing_slide::before
+    {
+        content: attr(data-title);
+    height: 36px;
+    color: white;
+
+    font-size: 17px;
+    padding-top: 10px;
+    position: absolute;
+    background: #004953;
+    top: 0;
+    width: 100%;
+    font-weight: 500;
+    -webkit-clip-path: polygon(0 0, 100% 0, 84% 90%, 16% 90%);
+    clip-path: polygon(0 0, 100% 0, 84% 90%, 16% 90%);
+}
+      }
+      
+      
+      
+  
+}
+
+  @media screen and (min-width: 768px) and (max-width: 900px)
+  {
+      .pricing_slide
+      {
+          padding: 30px 5px 10px;
+          max-width: 221px;
+      }
+  }
+
+@media screen and (max-width: 768px)
+{
+    .a-custom_btn
+    {
+        position: absolute;
+        opacity: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        .custom_btn
+        {
+            position: absolute;
+            opacity: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        }
+    }
+    .pricing_s .pricing_slide .desc:first-child
+    {
+        animation: flash 1s linear alternate infinite;
+    }
+
+}
+@keyframes flash
+{
+    from{
+        color: black;
+
+    }
+    to
+    {
+        color: $primary_color;
+    }
+}
+ 
+
+
+// .testing
+// {
+//     background-color: red;
+//     animation: lolip-r 1s forwards;
+//     overflow: hidden !important;
+// }
+// .in_t
+// {
+//    animation: lolip 1s linear forwards;
+// }
+
+
+// @keyframes lolip-r
+// {
+//     from{
+//         height: 500px;
+//     }
+//     to{
+//         height: 0px;
+//     }
+// }
+
+// @keyframes lolip
+// {
+//     from{
+//         height: 0px;
+//     }
+//     to{
+//         height: 500px;
+//     }
+// }

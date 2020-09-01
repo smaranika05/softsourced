@@ -1,0 +1,133 @@
+@import '../../../assets/scss/flexbox' ;
+
+.about_s
+{
+    min-height: 0;
+    .m_content
+    {
+        @include flexi(column);
+    }
+    .desc
+    {
+        text-align: center;
+        line-height: 2;
+        
+    } 
+
+
+    .imgNdesc
+    {
+        @include flexi(row, center, space-evenly);
+    }
+    .img_desc_wrapper
+    {
+        @include flexi(row, center, space-evenly);
+    }
+    .img_casual_wrapper
+    {
+        height: 200px;
+        width: 200px;
+    }
+
+
+
+    .img_wrapper
+    {
+        height: 200px;
+        width: 200px;
+
+        &::after
+        {
+            content: attr(name-member);
+            display: block;
+            
+            margin: 5px auto;
+            text-align: center;
+        }
+
+        &:first-child
+        {
+            img{
+
+            
+            border-radius: 0px 27px 40px 0px;
+    box-shadow: 2px 7px 22px rgba(0,0,0,.1);
+        }
+    }
+        &:last-child
+        {
+            img{
+
+            
+            border-radius: 27px 0px 0px 40px;
+    box-shadow: -2px 7px 22px rgba(0,0,0,.1);
+        }
+    }
+    }
+    .descNimg
+    {
+        position: absolute;
+        width: 100%;
+            @include flexi(row,center,space-between);
+            flex-wrap: wrap;
+        
+    //  img
+    //  {
+    //      transform: rotateY(180deg);;
+    //  }
+    }
+      
+    
+}
+
+.partners_logo
+{
+    @include flexi(row, center, space-evenly);
+    flex-wrap: wrap;
+    position: relative;
+    margin: 40px auto;
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+
+    &::before
+    {
+        content: 'Trusted partners  ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 13px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 600px)
+{
+    .about_s
+    {
+        .desc{
+            padding: 0 10%;
+        }
+    }
+  
+}
+
+@media screen and (max-width: 1220px)
+{
+    .about_s  .descNimg
+    {
+        position: relative;
+        justify-content: space-evenly;
+
+        .img_wrapper
+        {
+            margin-bottom: 40px;
+        img
+        {
+            border-radius: 10px;
+           
+        }
+    }
+    }
+}

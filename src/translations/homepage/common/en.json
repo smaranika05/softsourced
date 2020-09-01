@@ -1,0 +1,63 @@
+{
+    "nav": ["ABOUT","SERVICES & PRICING","PROJECTS","TEAM","BLOG","CONTACT"],
+    "main_cat": ["E-Commerce","Mobile Applications","API Development"],
+    "sub_cat": [
+        [
+         "Shopify",
+         "WooCommerce",
+         "Headless"
+        ],
+        [
+            "Food Delivery",
+            "Social Networking Platform",
+            "Messaging with Secure File Storage"
+        ],
+        [
+            "Connecting Bank Account to Accounting, Reporting and Invoice Generation",
+            "ERP to the Rest of the Organisation",
+            "API Based Microservices on a Case by Case Basis"
+        ]
+    ],
+    "basic": {
+        "time": "hours",
+        "from": "from",
+        "submit": "SUBMIT",
+        "sending": "SENDING...",
+        "sent": "SENT",
+        "invalid_details": "INVALID DETAILS",
+        "submit_status": "Thank you for your message, we’ll get back to you within 24 hours.",
+        "error_status": "Your message could not be sent",
+        "germany": "Germany",
+        "munich": "Munich",
+        "india": "India",
+        "sales": "Sales",
+        "technology": "Technology",
+        "invalidField": "Please fill out this field",
+        "weeks": "weeks",
+        "people":"people",
+        "resume": "Resume..."
+
+    },
+    "links": {
+        "pdt_pricing": "See products & pricing ",
+        "projects": "See all projects",
+        "pricing": "CHOOSE PLAN",
+        "contact": "I agree with <1>Terms & Conditions</1> and <3>Privacy Policy</3>.*"
+    },
+    "footer":
+    {
+        "exp": "our expertise",
+        "pjts": "our projects",
+        "n_i": {
+            "n_i": "news and info",
+            "blog": "blog",
+            "abt_softy": "about softsourced"
+        },
+        "c_i": "contact info",
+        "careers": "careers",
+        "contact": "contact us",
+        "imprint": "imprint",
+        "tnc": "terms and conditions",
+        "pp": "privacy policy"
+            }
+}
