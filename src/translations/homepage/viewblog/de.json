@@ -1,0 +1,48 @@
+{
+  "title": "BLOG",
+  "desc": "In unserem Blog veröffentlichen wir Artikel technischer Natur oder über uns selbst, um über jüngste Entwicklungen auf dem Laufenden zu halten.",
+  "blogitems": [
+    {
+      "bId": "payment_provider",
+      "author": ["MARC", "MUELLER"],
+      "date": "18th September 2020",
+      "blogtitle": "Zahlungsanbieter",
+      "blogdesc": "softsourced kombiniert die besten Entwickler und Designer mit proprietären Werkzeugen und künstlicher Intelligenz - so wird Softwareentwicklung einfach und transparent."
+    },
+    {
+      "bId": "payment",
+      "author": ["MARC", "MUELLER"],
+      "date": "11th September 2020",
+      "blogtitle": "How Payment Gateways, Credit Cards, Banks And External Payment Providers Fit Into The Payment Landscape Online",
+      "blogdesc": "Bitte legen Sie Ihre Sicherheitsgurte an. Schnallen Sie sich nicht zu fest an, wird die Fahrt doch eher ein Spaziergang. Sie werden kutschiert, sitzen dabei auf dem Rücksitz und schauen aus dem Fenster. Draußen sehens..."
+    },
+    {
+      "bId": "react",
+      "author": ["HANUSH", "PILLAI"],
+      "date": "4th September 2020",
+      "blogtitle": "React oder WordPress?",
+      "blogdesc": "Die Frage, was bei der Planung einer Website zu verwenden ist, ist von enormer Bedeutung. Abhängig von der Art der Website, die Sie erstellen ..."
+    },
+    {
+      "bId": "voice_search",
+      "author": ["MARC", "MUELLER"],
+      "date": "28th August 2020",
+      "blogtitle": "Die Voice Search Welle",
+      "blogdesc": "Voice Search (zu deutsch Sprachsuche) nimmt immer mehr Fahrt auf. Es gibt eine wachsende Anzahl an Menschen, die ihr Nutzerverhalten dem Konzept „Voice first“ anpassen. Die Voice Search Revolution..."
+    },
+    {
+      "bId": "g_marketing",
+      "author": ["MARC", "MUELLER"],
+      "date": "21st August 2020",
+      "blogtitle": "GROWTH MARKETING: EIN KURZER ÜBERBLICK ÜBER DIE TOP 5 LANDING PAGE BUILDER",
+      "blogdesc": "Online-Conversiomns durch Online-Maßnahmen wie Websites oder E-Commerce sind eine wichtige Säule eines erfolgreichen Verkaufsprozesses. In diesem sehr großen und dichten Markt ist es jedoch schwierig..."
+    },
+    {
+      "bId": "mm_10052020",
+      "author": ["MARC", "MUELLER"],
+      "date": "7th August 2020",
+      "blogtitle": "DIE 10 MUST-HAVES FÜR IHRE LANDING PAGE UM ZU KONVERTIEREN",
+      "blogdesc": "Paid search und Search Engine Advertisement (SEA) sind großartig - aber haben Sie genug Zeit und Geld auf Ihre SEO-Strategie verwendet?"
+    }
+  ]
+}

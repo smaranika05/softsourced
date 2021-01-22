@@ -1,0 +1,48 @@
+{
+  "title": "BLOGPOSTS",
+  "desc": "In our blog, we publish articles that are of technical nature or about our company to keep you up to speed with latest developments.",
+  "blogitems": [
+    {
+      "bId": "payment_provider",
+      "author": ["MARC", "MUELLER"],
+      "date": "18th September 2020",
+      "blogtitle": "Payment Provider",
+      "blogdesc": "softsourced combines the best developers and designers with proprietary tools and artificial intelligence – making software development easy and transparent.Try these out for the latest blog and update me as well...."
+    },
+    {
+      "bId": "payment",
+      "author": ["MARC", "MUELLER"],
+      "date": "11th September 2020",
+      "blogtitle": "How Payment Gateways, Credit Cards, Banks And External Payment Providers Fit Into The Payment Landscape Online",
+      "blogdesc": "Please fasten your seatbelts. Not too tight though, let me take you on a smooth ride. Imagine yourself in a car strolling on the country road, sitting in the back seat. What you see outside is the..."
+    },
+    {
+      "bId": "react",
+      "author": ["HANUSH", "PILLAI"],
+      "date": "4th September 2020",
+      "blogtitle": "React or WordPress?",
+      "blogdesc": "The question of what to use when planning a website is quite an important one, and depending on the type of website you want to build it comes down to a few options..."
+    },
+    {
+      "bId": "voice_search",
+      "author": ["MARC", "MUELLER"],
+      "date": "28th August 2020",
+      "blogtitle": "The voice search wave",
+      "blogdesc": "Voice search is gaining some serious momentum. There is a growing number of people who adapt their web using behaviour towards the concept of ‘Voice first.’The voice search revolution is..."
+    },
+    {
+      "bId": "g_marketing",
+      "author": ["MARC", "MUELLER"],
+      "date": "21st August 2020",
+      "blogtitle": "GROWTH MARKETING: HOW TO MAKE USE OF LANDING PAGE BUILDERS",
+      "blogdesc": "Online-conversions through online-measures such as websites or e-commerce are an important pillar to a successful sales process. In this very vast and dense market though, it is hard to find an easy way to an optimized website..."
+    },
+    {
+      "bId": "mm_10052020",
+      "author": ["MARC", "MUELLER"],
+      "date": "7th August 2020",
+      "blogtitle": "THE 10 MUST-HAVES YOUR LANDING PAGE NEEDS TO CONVERT",
+      "blogdesc": "Paid search, Search Engine Advertising (SEA) are great – but have you spent enough time and money on your SEO-strategy?"
+    }
+  ]
+}

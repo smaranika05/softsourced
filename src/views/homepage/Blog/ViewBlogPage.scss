@@ -1,0 +1,70 @@
+@import "../../../assets/scss/flexbox";
+@import "../../../assets/scss/colors";
+
+.view_blog_s {
+  //padding: 25px 0px;
+
+  border-bottom: 15px solid white;
+  a {
+    font-weight: normal;
+  }
+}
+.view_blog_articles {
+  @include flexi(row, flex-start);
+  flex-wrap: wrap;
+}
+
+.view_blog_article {
+  padding: 30px;
+  @include flexi(column);
+
+  .title {
+    text-align: left;
+    height: 30px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .img_wrapper {
+    width: 540px;
+    height: 300px;
+
+    overflow: hidden;
+  }
+  .content_wrapper {
+    width: 545px;
+  }
+  .desc {
+    font-size: 15px;
+    text-align: left;
+  }
+  .links {
+    display: block;
+    text-align: right;
+    margin: 5px 5px 0 0;
+    color: $primary_color;
+  }
+}
+
+.author {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  &_img_wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    img {
+      border-radius: 50%;
+    }
+    margin-right: 6px;
+  }
+  &_nd {
+    @include flexi(column, left, center);
+  }
+  &_name {
+    color: black;
+  }
+}

@@ -1,0 +1,188 @@
+@import './assets/scss/colors';
+@import './assets/scss/flexbox';
+$primary_color_0 : #008055;
+$primary_color_1 : #00CC88;
+$primary_color_2 : #37AE86;
+
+
+
+
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont,'Raleway', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html{
+  scroll-behavior: smooth;
+  &::-moz-selection { /* Code for Firefox */
+    background: $primary_color;
+  }
+  
+  &::selection {
+      background: $primary_color;
+  }
+}
+
+.section
+{
+ 
+  margin: 50px auto;
+}
+
+.title
+{
+ 
+  font-weight: 700;
+  text-align: center;
+  margin: 20px auto;
+  text-transform: uppercase;
+  
+}
+.desc
+{
+  color: #979393; 
+}
+.c_desc
+{
+  text-align: center;
+}
+a
+{
+  text-decoration: none;
+  outline: none;
+  color: black ;
+  text-align: center;
+  font-weight: 700;
+  }
+
+  .slide_wrapper
+    {
+        text-align: center;
+        outline: none;
+    }
+    .main_slider
+    {
+        margin: 50px auto 30px auto;
+    }
+
+    .custom_btn
+    {
+        display: inline-flex;
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: 2px solid $primary_color;
+        color: $primary_color;
+        outline: none;
+        text-decoration: none;
+        background-color: white;
+        transition: .3s;
+        margin: 0 3px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        
+        &::selection
+        {
+          background-color: transparent;
+        }
+      
+    }
+    
+    
+    .checked
+    {
+        color: white !important;
+        background-color: $primary_color !important
+    }
+    .checked_0
+    {
+      color: white !important;
+      background-color: $primary_color_0 !important;
+    }
+    .checked_1
+    {
+      color: white !important;
+      background-color: $primary_color_1 !important;
+    }
+    .checked_2
+    {
+      color: white !important;
+      background-color: $primary_color_2 !important;
+    }
+    .selected
+    {
+      box-shadow: 0px 2px 8px rgba(0,0,0,.5) !important;  
+      border-color: dimgray;
+    }
+   
+
+    input[type="text"], input[type="tel"]
+    {
+        outline: none !important;
+        margin-top: 1.2rem;
+        width: 95%;
+        padding: 12px 0 12px 14px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 10px;
+        box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.10);
+
+        &:focus
+        {
+         box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.10),0 0 0 0.14rem lighten($primary_color, 30%);
+          border-color: $primary_color;
+        }
+     
+    }
+
+    .invalid
+    {
+      box-shadow: 0 0 0 0.1rem lighten(red, 20%) !important;
+      border-color: #ccc !important;
+    }
+    .submit
+    {
+      margin: auto;
+        padding: 10px 4%;
+        background-color: $primary_color;
+        color: white;
+        font-size: 1.1em;
+        box-shadow: 2px 3px 8px black;
+        &:active{
+            box-shadow: -1px -4px 2px black;
+        }
+      }
+
+
+.dnone
+{
+  display: none;
+}
+
+
+@media screen and (min-width: 1024px)
+{
+  .custom_btn
+  {
+    &:hover
+        {
+            color: white;
+            background-color: $primary_color;
+            transition: .6s;
+        }
+  }
+}

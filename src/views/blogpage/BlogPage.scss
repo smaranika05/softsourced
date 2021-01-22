@@ -1,0 +1,136 @@
+@import "../../assets/scss/flexbox";
+@import "../../assets/scss/colors";
+@import "../../assets/scss/divider";
+
+.blogpage_s {
+  margin: 100px 15%;
+
+  .title {
+    margin-top: 100px;
+    text-align: left;
+  }
+  .author {
+    font-size: 12px !important;
+    margin-top: 10px;
+    @include flexi(row, center, space-between);
+    .details {
+      @include flexi(row, center, left);
+    }
+    &_social_links {
+      @include flexi(row, center, space-between);
+      img {
+        height: 25px;
+        width: 25px;
+        margin-left: 20px;
+      }
+    }
+    .img_wrapper {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      img {
+        border-radius: 50%;
+      }
+      margin-right: 6px;
+    }
+    .nd {
+      @include flexi(column, left, center);
+    }
+    .name {
+      color: black;
+    }
+  }
+
+  .divider {
+    @include divider(2px, $primary_color, 28%);
+    margin: 10px 37px;
+  }
+  .Blogdesc {
+    margin-top: 30px;
+    text-align: justify;
+    color: black;
+    line-height: -2px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin: 20px;
+    ul li {
+      color: black;
+      margin: 20px;
+      //display: inline-block;
+      list-style: none;
+
+      padding: 0 0 0 0em;
+      text-indent: -0.5em;
+
+      position: relative;
+    }
+
+    ul li::before {
+     
+    list-style-type: square;
+    /* border-radius: 100px; */
+  
+    border-collapse: separate;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #006b6e;;
+    font-weight: 700;
+    font-size: 2em;
+    left: -1em;
+    position: absolute;
+    border-radius: 3px!important;
+    top: 0.2em;
+    
+    }
+
+    // ol {
+    //   margin: 0 0 1.5em;
+    //   padding: 0;
+    //   counter-reset: item;
+    // }
+
+    // ol > li {
+    //   margin: 0;
+    //   padding: 0 0 0 1em;
+    //   text-indent: -1em;
+    //   list-style-type: none;
+    //   counter-increment: item;
+    // }
+
+    // ol > li:before {
+    //   display: inline-block;
+    //   width: 1em;
+    //   padding-right: 0.5em;
+    //   font-weight: bold;
+    //   text-align: right;
+    //   content: counter(item) ".";
+    // }
+  }
+  .button {
+    background-color: #59ccc1;
+    border: none;
+    color: black;
+    padding: 16px 10px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 40px;
+    width: 119px;
+  }
+  .wrapper {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blogpage_s {
+    margin: 100px 1%;
+  }
+  .divider {
+    width: 48% !important;
+  }
+}
